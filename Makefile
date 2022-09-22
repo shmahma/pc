@@ -12,7 +12,7 @@ app: $(OBJ)
 
 
 %.o: %.c
-	$(CC) -o $@ -c $< $(CFLAGS) -Imathematika -Icrypto
+	$(CC) -o $@ -c $< $(CFLAGS) -Iarithmetika/mathematika -Iarithmetika/crypto
 
 .PHONY: clean mrproper
 
