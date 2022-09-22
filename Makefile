@@ -12,7 +12,7 @@ app: $(OBJ)
 
 
 %.o: %.c
-	$(CC) -o $@ -c $< $(CFLAGS) -I..v5/generator
+	$(CC) -o $@ -c $< $(CFLAGS) -I../v5/generator
 
 .PHONY: clean mrproper
 
