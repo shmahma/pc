@@ -2,7 +2,7 @@ C=gcc
 CFLAGS=-W -Wall -std=c99
 LDFLAGS=
 EXEC=app
-SRC= arithmetika/mathematika/mathematika.c arithmetika/crypto/crypto.c app.c
+SRC= arithmetika/mathematika/mathematika.c arithmetika/crypto/crypto.c arithmetika/app.c
 OBJ= $(SRC:.c=.o)
 
 all: $(EXEC)
