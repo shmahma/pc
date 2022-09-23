@@ -1,8 +1,8 @@
-C=gcc
+CC=gcc
 CFLAGS=-W -Wall -std=c99
 LDFLAGS=
 EXEC=app
-SRC= v5/generator/generator.c v5/principal/app.c
+SRC= ../generator/generator.c app.c
 OBJ= $(SRC:.c=.o)
 
 all: $(EXEC)
@@ -12,7 +12,7 @@ app: $(OBJ)
 
 
 %.o: %.c
-	$(CC) -o $@ -c $< $(CFLAGS) -I v5/generator
+	$(CC) -o $@ -c $< $(CFLAGS) -I ../generator
 
 .PHONY: clean mrproper
 
